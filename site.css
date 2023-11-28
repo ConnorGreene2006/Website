@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+body {
+    background-image: url(./images/karateman.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Mate SC;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.intro {
+    margin: 650px;
+    border-inline-start: 10px solid #F7BF50;
+}
+.intro p {
+    margin-right: auto;
+}   
+#path {
+    border-inline-end: 10px solid #F7BF50;
+}
+  
+.mma h1 {
+    text-align: center;
+    color: black;
+    font-family: Orbitron;
+    -webkit-text-stroke-color: rgb(207, 152, 12);
+    -webkit-text-stroke-width: 1px;
+    font-size: 50px;
+} 
+.img, .img1 {
+    width: 500px;
+}
+div nav :hover {
+    color: bisque;
+}
+ div nav ul  {
+    text-align: center;
+    color: white;
+    display: inline;
+    list-style-type: none;
+}
+section .img {
+    float: right;
+    border: solid #F7BF50;
+    margin-right: 100px;
+}
+section .img1 {
+    float: left;
+    border: solid #F7BF50;
+    margin-left: 100px;
+}
+div nav a {
+    color: rgb(179, 176, 176);
+    text-decoration: none;
+}
+ 
+section {
+    text-align: center;
+    color:rgb(179, 176, 176);
+}
+footer  {
+    margin-top: auto;
+    text-align: center;
+    color: #F7BF50;
+   
+}
+footer div  :hover{
+    color: bisque;
+}
+nav li {
+    display: inline-block;
+}
+
+footer a {
+    color: #F7BF50;
+    margin-top: auto;
+    
+}
+header img {
+display: flex;
+align-items: left;
+height: 100px;
+margin-inline-start: 30px;
+}
+h2 {
+    text-align: center;
+    color: rgb(207, 152, 12);
+    
+}
+header h2 {
+    font-size: 1.7em;
+}
+section h2 {
+    font-size: 1.7em;
+}
+
+nav {
+    word-spacing: 3px;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+@media (max-width:768px )   {
+   main {
+    width: 90%  ;
+    margin: 0 auto;
+   }
+   h1, h2, p {
+    font-size: 1.3em;
+   }
+    body {
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+    }
+    .intro {
+       margin: auto;
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav ul {
+        padding: 0;
+        list-style-type: none;
+    } .img, .img1 {
+       width: 100;
+    }
+}
+
+@media (min-width:768px ) {main {
+    width: 90%  ;
+    margin: 0 auto;
+   }
+   h1, h2, p {
+    font-size: 1.3em;
+   }
+    body {
+        margin: 10px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+    }
+    .intro {
+       margin: auto;
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav ul {
+        padding: 0;
+        list-style-type: none;
+    } .img, .img1 {
+       width: 100;
+    }}
