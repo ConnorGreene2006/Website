@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="./images/thelogo.png">
     <title>Document</title>
-    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="./Styles/site.css">
 </head>
 
 <body>
@@ -28,10 +28,58 @@
 
 
     </header>
-    <section>
-        <h2></h2>
-        <p></p>
-
+  
+    <section class="form">
+        <h2>iuh</h2>
+        <form action="submit.html"        method="get">
+            <label for="firstname">mbncv</label>
+            <input required      type="text" id="firstname" name="fn" placeholder="First Name">
+            <br>
+            <br>
+            <label for="LastName">mbncv</label>
+            <input required      type="text" id="LastName" name="ln" placeholder="Last Name">
+           <br>
+           <br>
+           <label for="email">please enter an email</label>
+           <input  required   type="email"  id="email" placeholder="MyEmail123@Email.com">
+           <br><br>
+           how do you rate us?
+           <section class="radio">
+           
+           <input type="radio" name="1" id="jew">
+           <label for="1">1</label>
+           <br>
+           <input type="radio" name="2">
+           <label for="2">2</label>
+           <br>
+           <input type="radio" name="3">
+           <label for="3">3</label>
+           <br>
+           <input type="radio" name="4">
+           <label for="4">4</label>
+           <br>
+           <input type="radio" name="5">
+           <label for="5">5</label>
+          </section>  
+          <br>
+         
+          
+            <select name="courses" id="courses">
+                <option value="none">Which course?</option>
+                <option value="Muay Thai">Muay Thai</option>
+                <option value="BJJ">Brazilian Jiu-Jitsu</option>
+                <option value="Boxing">Boxing</option>
+                <option value="Karate">Karate</option>
+                <option value="Wrestling">Wrestling</option>
+            </select>
+           <br>
+           <label for="text">need to tell us something?</label>
+           <br>
+           <textarea name="Comments" id="text" cols="30" rows="10" placeholder=" Write a message to us!"></textarea>
+          <br>
+           <button type="submit" value="submit">Confirm Information</button>
+            
+        </form>
     </section>
     <footer>
         <nav>
