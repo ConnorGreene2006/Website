@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+:root {
+--headercolor: rgb(207, 152, 12);
+--navcolor:rgb(179, 176, 176);
+--imgborder: #F7BF50;
+--hovercolor: bisque;
+}
+h1{
+    text-align: center;
+
+}
 body {
-    background-image: url(./images/karateman.jpg);
+    background-image: url(/images/karateman.jpg);
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,53 +24,107 @@ body {
 }
 .intro {
     margin: 650px;
-    border-inline-start: 10px solid #F7BF50;
+    border-inline-start: 10px solid var(--imgborder);
 }
 .intro p {
     margin-right: auto;
 }   
 #path {
-    border-inline-end: 10px solid #F7BF50;
+    border-inline-end: 10px solid var(--imgborder);
 }
   
-.mma h1 {
+.mma > h1 {
     text-align: center;
     color: black;
     font-family: Orbitron;
-    -webkit-text-stroke-color: rgb(207, 152, 12);
+    -webkit-text-stroke-color: var(--headercolor);
     -webkit-text-stroke-width: 1px;
     font-size: 50px;
 } 
 .img, .img1 {
     width: 500px;
 }
+.img2 {
+  margin: 20px;
+  border: solid var(--headercolor);
+  float: left;
+}
+.img3   {
+float: right;
+margin: 20px;
+border: solid var(--headercolor);
+}
+.img4 {
+    float: left;
+    margin: 20px;
+    border: solid var(--headercolor);
+}
+.img5 {
+    float: right;
+    margin: 20px;
+    border: solid var(--headercolor);
+}
+div.employees{
+  
+    border: 1px solid var(--headercolor);
+ background-color: rgba(0, 0, 0, 0.67);
+}
+.employees
+{
+    color: var(--navcolor);
+}
+.kidane {
+    text-align: right;
+    margin-left: 1550PX;
+    margin-right: 15px;
+}
+.jacob {
+    
+    margin-right:1550px;
+}
+.adrian {
+   margin-right: 1550px;
+}
+.jeanne {
+    margin-left:1550px;
+   
+}
+div .jeanne .kidane .jacob .adrian{
+    display: flex;
+}
+.video {
+    align-self: center;
+    
+}
 div nav :hover {
-    color: bisque;
+    color: var(--hovercolor);
 }
  div nav ul  {
     text-align: center;
     color: white;
-    display: inline;
+   
     list-style-type: none;
 }
 section .img {
     float: right;
-    border: solid #F7BF50;
+    border: solid var(--headercolor);
     margin-right: 100px;
 }
 section .img1 {
     float: left;
-    border: solid #F7BF50;
+    border: solid var(--imgborder);
     margin-left: 100px;
 }
 div nav a {
-    color: rgb(179, 176, 176);
+   
+    color: var(--navcolor);
     text-decoration: none;
 }
  
 section {
     text-align: center;
-    color:rgb(179, 176, 176);
+    color: var(--hovercolor);
+color: var(--navcolor);
 }
 footer  {
     margin-top: auto;
@@ -68,7 +132,7 @@ footer  {
     color: #F7BF50;
    
 }
-footer div  :hover{
+footer div nav :hover{
     color: bisque;
 }
 nav li {
@@ -76,19 +140,19 @@ nav li {
 }
 
 footer a {
-    color: #F7BF50;
+    color: var(--imgborder);
     margin-top: auto;
-    
+   
 }
 header img {
 display: flex;
-align-items: left;
+
 height: 100px;
 margin-inline-start: 30px;
 }
 h2 {
     text-align: center;
-    color: rgb(207, 152, 12);
+    color: var(--headercolor);
     
 }
 header h2 {
@@ -103,6 +167,51 @@ nav {
     text-decoration: none;
     list-style-type: none;
     
+}
+table {
+
+margin: auto;
+}
+th {
+    text-align: left;
+}
+td {
+    text-align: left;
+}
+table, th, td {
+    border: 1px solid white;
+border-collapse: collapse;
+}
+th, td {
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: var(--imgborder);
+    color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--headercolor);
+    color: black;
+}
+
+ 
+
+textarea, input, select, button {
+    background-color: var(--navcolor);
+  
+}
+form {
+    border: 1px solid var(--headercolor);
+    text-align: center;
+}
+.radio {
+    margin-left:  600px;
+    margin-right: 600px;
+   border: 1px solid var(--headercolor);
+   text-align: left;
+   margin: auto;
+   display: table;
 }
 @media (max-width:768px )   {
    main {
@@ -129,11 +238,12 @@ nav {
         padding: 0;
         list-style-type: none;
     } .img, .img1 {
-       width: 100;
+       width: 200px;
     }
 }
 
-@media (min-width:768px ) {main {
+@media (min-width:768px ) {
+ main {
     width: 90%  ;
     margin: 0 auto;
    }
@@ -157,5 +267,7 @@ nav {
         padding: 0;
         list-style-type: none;
     } .img, .img1 {
-       width: 100;
-    }}
+       width: 450px;
+       height: 300px;
+    }
+}
