@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="./images/thelogo.png">
-    <title>Document</title>
+    <title>Beyond-mma</title>
     <link rel="stylesheet" href="./Styles/site.css">
 </head>
 
@@ -20,7 +20,7 @@
                     <li> <a href="./Whoarewe.html">Who Are We?</a></li>
                     <li> <a href="./courses.html">Try A Free Course!</a></li>
                     <li> <a href="./contactus.html">Come And Contact Us!</a></li>
-                    <li> <a href="./ourhistory.html">Our history</a></li>
+
                     <li> <a href="./hiring.html">Interested in working?</a></li>
                 </ul>
             </nav>
@@ -28,42 +28,60 @@
 
 
     </header>
-  
-    <section class="form">
-        <h2>iuh</h2>
-        <form action="submit.html"        method="get">
-            <label for="firstname">mbncv</label>
-            <input required      type="text" id="firstname" name="fn" placeholder="First Name">
+
+    <section class="employee">
+        <h2>Want to sign up?</h2>
+        <form action="submit.html" method="get">
+            <label for="firstname">Please enter a first name:</label>
+            <input required type="text" id="firstname" name="fn" placeholder="First Name">
             <br>
             <br>
-            <label for="LastName">mbncv</label>
-            <input required      type="text" id="LastName" name="ln" placeholder="Last Name">
-           <br>
-           <br>
-           <label for="email">please enter an email</label>
-           <input  required   type="email"  id="email" placeholder="MyEmail123@Email.com">
-           <br><br>
-           how do you rate us?
-           <section class="radio">
-           
-           <input type="radio" name="1" id="jew">
-           <label for="1">1</label>
-           <br>
-           <input type="radio" name="2">
-           <label for="2">2</label>
-           <br>
-           <input type="radio" name="3">
-           <label for="3">3</label>
-           <br>
-           <input type="radio" name="4">
-           <label for="4">4</label>
-           <br>
-           <input type="radio" name="5">
-           <label for="5">5</label>
-          </section>  
-          <br>
-         
-          
+            <label for="LastName">Please enter a last name:</label>
+            <input required type="text" id="LastName" name="ln" placeholder="Last Name">
+            <br>
+            <br>
+            <label for="email">please enter an email:</label>
+            <input required type="email" id="email" placeholder="MyEmail123@Email.com">
+            <br><br>
+            <h4> how do you rate us?</h4>
+            <section>
+
+
+                <input type="radio" name="1" id="1">
+                <label for="1">1</label>
+                <br>
+                <input type="radio" name="2" id="2">
+                <label for="2">2</label>
+                <br>
+                <input type="radio" name="3" id="3">
+                <label for="3">3</label>
+                <br>
+                <input type="radio" name="4" id="4">
+                <label for="4">4</label>
+                <br>
+                <input type="radio" name="5" id="5">
+                <label for="5">5</label>
+            </section>
+            <br>
+            <section class="checkbox">
+                how did you find out about us?
+                <br>
+                <input type="checkbox" name="friend" id="friend">
+                <label for="friend">I found it through a friend</label>
+                <br>
+                <input type="checkbox" name="flier" id="flier">
+                <label for="flier">I found a flier on street</label>
+                <br>
+                <input type="checkbox" name="website" id="website">
+                <label for="website">I found it through a website online</label>
+                <br>
+                <input type="checkbox" name="driving" id="driving">
+                <label for="driving">I found it when driving by </label>
+                <br>
+                <input type="checkbox" name="radio" id="radio">
+                <label for="radio">I found it listening to the radio</label>
+            </section>
+            <br>
             <select name="courses" id="courses">
                 <option value="none">Which course?</option>
                 <option value="Muay Thai">Muay Thai</option>
@@ -72,15 +90,36 @@
                 <option value="Karate">Karate</option>
                 <option value="Wrestling">Wrestling</option>
             </select>
-           <br>
-           <label for="text">need to tell us something?</label>
-           <br>
-           <textarea name="Comments" id="text" cols="30" rows="10" placeholder=" Write a message to us!"></textarea>
-          <br>
-           <button type="submit" value="submit">Confirm Information</button>
-            
+            <br>
+            <label for="text">need to tell us something?</label>
+            <br>
+            <textarea name="Comments" id="text" cols="30" rows="10" placeholder=" Write a message to us!"></textarea>
+            <br>
+            <button type="submit" value="submit">Confirm Information</button>
+
         </form>
     </section>
+
+    <table>
+        <tr>
+            <th>Payment Periods</th>
+            <th>Prices</th>
+        </tr>
+        <tr>
+            <td>Every Week</td>
+            <td>$8.00</td>
+        </tr>
+        <tr>
+            <td>Every Month</td>
+            <td>$30.00</td>
+        </tr>
+        <tr>
+            <td>Every Year</td>
+            <td>$424.00</td>
+        </tr>
+    </table>
+
+
     <footer>
         <nav>
             <ul>
@@ -100,7 +139,7 @@
             </p>
         </address>
         <small>
-            Copyright &copy; 2023, Gatineau Park Tours.
+            Copyright &copy; 2023, Beyond-MMA.
         </small>
     </footer>
 </body>
